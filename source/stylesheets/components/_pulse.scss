@@ -1,0 +1,109 @@
+// variables
+$blue: #26B3FF;
+$blue-outer: rgba(85,216,232,.4);
+$green: #35E861;
+$green-outer: rgba(110,255,122,.4);
+$red: #FF4B44;
+$red-outer: rgba(232,111,112,.4);
+$orange: #E87337;
+$orange-outer: rgba(255,183,90,.4);
+
+// animations
+@mixin keyframes($name, $max-size) {
+  @keyframes pulse-#{$name} {
+    0% {
+      opacity: .75;
+      transform: scale(1);
+    }
+    25% {
+      opacity: 0.75;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale($max-size);
+    }
+  }
+}
+
+@include keyframes('2-5', 2.5);
+
+// styles
+body {
+  background-color: rgb(29, 31, 32);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+.dot {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+
+  > span {
+    animation: pulse-2-5 1s linear infinite;
+    border-radius: 50%;
+    display: block;
+    height: 12px;
+    width: 12px;
+    > span {
+      animation: pulse-2-5 1s linear infinite;
+      border-radius: 50%;
+      display: block;
+      height: 12px;
+      width: 12px;
+      &:after {
+        animation: pulse-2-5 1s linear infinite;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 12px;
+        width: 12px;
+      }
+    }
+  }
+
+  &.blue {
+    background-color: $blue;
+    span {
+      background-color: $blue-outer;
+      &:after {
+        background-color: $blue-outer;
+      }
+    }
+  }
+  &.green {
+    background-color: $green;
+    span {
+      background-color: $green-outer;
+      &:after {
+        background-color: $green-outer;
+      }
+    }
+  }
+  &.red {
+    background-color: $red;
+    span {
+      background-color: $red-outer;
+      &:after {
+        background-color: $red-outer;
+      }
+    }
+  }
+  &.orange {
+    background-color: $orange;
+    span {
+      background-color: $orange-outer;
+      &:after {
+        background-color: $orange-outer;
+      }
+    }
+  }
+}
