@@ -9,7 +9,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Portfolio - Middleman</title>
-    <link href="stylesheets/application-e544ab59.css" rel="stylesheet" />
+    <link href="stylesheets/application-742d4d3a.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/images/favicon.png" rel="icon" type="image/png" />
   </head>
@@ -19,16 +19,40 @@
   <a href="/" class="navbar-wagon-brand">
     <img src="images/bearweblogo-cdbb85e6.png" alt="logo">
   </a>
-  Tuesday, Dec 18
+  Thursday, Dec 20
+
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
+
     <a href="https://github.com/Jerem33320" class="navbar-wagon-item navbar-wagon-link"><i class="fab fa-github"></i> Github</a>
-    <br><a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-peyrat-226189172" class="navbar-wagon-item navbar-wagon-link"><i class="fab fa-linkedin"></i> Linkedin</a>
+    <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-peyrat-226189172" class="navbar-wagon-item navbar-wagon-link"><i class="fab fa-linkedin"></i> Linkedin</a>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="images/austral-3f71dcf2.jpg" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <!-- <li><a href="https://github.com/Jerem33320" class="navbar-wagon-item navbar-wagon-link"><i class="fab fa-github"></i> Github</a></li>
+          <li><a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-peyrat-226189172" class="navbar-wagon-item navbar-wagon-link"><i class="fab fa-linkedin"></i> Linkedin</a></li> -->
+          <li style="font-family: Helvetica; color: grey;"> Bonjour, je serai heureux de discuter de votre projet!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="https://github.com/Jerem33320" class="navbar-wagon-item navbar-wagon-link"><i class="fab fa-github"></i> Github</a></li>
+        <li><a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-peyrat-226189172" class="navbar-wagon-item navbar-wagon-link"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Desktop-HD-Chicago-Bears-Wallpaper.jpg');">
-
+<div class="banner hidden-xs hidden-sm" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Desktop-HD-Chicago-Bears-Wallpaper.jpg');">
   <div class="banner-content" style="margin-right: 80px">
     <h1>JÉRÉMY PEYRAT</h1>
     <p>Développeur Web/Mobile Front-End et Back-End</p>
@@ -36,7 +60,15 @@
   </div>
 </div>
 
-<div class="wrapper">
+<div class="banner hidden-md hidden-lg" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Desktop-HD-Chicago-Bears-Wallpaper.jpg'); margin-left: -40px;">
+  <div class="banner-content">
+    <h1 style="font-size: 40px; padding-left: 30px;">JÉRÉMY PEYRAT</h1>
+    <p style="padding-left: 60px;">Développeur Web/Mobile Front-End et Back-End</p>
+    <img src='images/austral-3f71dcf2.jpg' style="margin-left: 40px; width: 150px; box-shadow: 0 1px 2px rgba(0,0,0,0.2); border: white 6px solid; border-radius: 50%;"/>
+  </div>
+</div>
+
+<div class="wrapper hidden-xs hidden-sm">
   <header class="header">À propos
     <div class="row">
       <div class="small-centered small-10 medium-8 large-6 columns">
@@ -56,34 +88,73 @@
     </p>
     <a href="images/jeremycv.pdf" class="col-xs-12 col-md-10 btn" style="width: 200px;" target="_blank"><i class="fas fa-file-download"></i><i>CV</i></a>
   </article>
-  <!-- <aside class="aside aside-2"><img src="images/fullbearweb-98d7efb8.png" width="200" alt="Fullbearweb" /></aside> -->
+
   <footer class="footer">
   <div class="centered">
     <section class="cards">
       <article class="card">
         <p><img src="images/ruby-617da419.png"></p>
-      </article><!-- /card-one -->
+      </article>
       <article class="card">
         <p><img src="images/htmlcss-f60fbadd.jpg"></p>
-      </article><!-- /card-two -->
+      </article>
       <article class="card">
         <p><img src="images/bootstrap-b95c195f.png"></p>
-      </article><!-- /card-three -->
+      </article>
       <article class="card">
         <p><img src="images/js-52949723.png"></p>
-      </article><!-- /card-four -->
+      </article>
       <article class="card">
         <p><img src="images/postgresql-8b3e08fe.png"></p>
-      </article><!-- /card-five -->
+      </article>
       <article class="cardgit">
         <p><img src="images/git-2f48ea39.png"></p>
-      </article><!-- /card-six -->
+      </article>
     </section>
   </div>
   </footer>
 </div>
 
-<div class="wrapper">
+<div class="wrapper hidden-md hidden-lg" style="height: 180vh;">
+  <header class="header">À propos
+    <div class="row">
+      <div class="small-centered small-10 medium-8 large-6 columns">
+        <div class="container">
+          <div class="dot blue"><span><span></span></span></div>
+          <div class="dot green"><span><span></span></span></div>
+          <div class="dot red"><span><span></span></span></div>
+          <div class="dot orange"><span><span></span></span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="header1"><i class="fas fa-birthday-cake"></i> 17/06/1987<br>  <i class="far fa-envelope"></i> jeremy.peyrat33320@gmail.com<br><i class="fas fa-map-marker-alt"></i> 33000 Bordeaux<br>  <i class="fas fa-mobile-alt"></i> 06.13.70.43.29</header>
+  <div class="container deux" style="font-family: Helvetica; color: grey;">
+    <p>Depuis toujours, je suis passionné par l’outil informatique.
+    Ayant été en formation au Bootcamp de Bordeaux <a target="_blank" href="https://www.lewagon.com/fr">Le Wagon</a>, je progresse dans le Développement d'application RoR.<br>Aimant partager ses connaissances, motivé et toujours de bonne humeur, je m’applique à ce que mon espace de travail et mes relations avec mes collaborateurs soient agréables et professionnelles.
+    </p>
+  </div>
+  <div>
+    <a href="images/jeremycv.pdf" class="col-md-6 offset-md-3 btn" style="margin-left: 0px; width: 200px;" target="_blank"><i class="fas fa-file-download"></i><i>CV</i></a>
+  </div>
+
+  <footer class="footer">
+  <div class="centered">
+    <section class="cards">
+      <article class="card">
+        <p><img src="images/ruby-617da419.png">
+        <img src="images/htmlcss-f60fbadd.jpg">
+        <img src="images/bootstrap-b95c195f.png">
+        <img src="images/js-52949723.png">
+        <p><img src="images/postgresql-8b3e08fe.png">
+        <img src="images/git-2f48ea39.png"></p>
+      </article>
+    </section>
+  </div>
+  </footer>
+</div>
+
+<div class="wrapper hidden-xs hidden-sm">
   <div class="header">Mes Réalisations
     <div class="row">
       <div class="small-centered small-10 medium-8 large-6 columns">
@@ -97,21 +168,54 @@
     </div>
   </div>
 
-<div class="row">
-  <div class="col-md-6">
-  <article class="slide">
-    <aside class="aside aside-1">
-    <div>La première réalisation est un clone d'AirBnB. Les particuliers peuvent louer le Super-Héros de leur choix.</div>
-      <a href="http://sup-air-oz.herokuapp.com"><img src="images/supairoz-ac08472f.png"></a>
-    </aside>
-  </article></div>
-  <div class="col-md-6">
-  <article class="slider">
-    <aside class="aside aside-2">
-    <div>La deuxième réalisation, plus professionelle, est une appli mobile. Les particuliers peuvent réserver l'artisan de leur choix, valider un devis, et effectuer les travaux à domicile.</div>
-      <a href="http://me-makers.herokuapp.com"><img src="images/me-makers-79a47345.png"></a>
-    </aside>
-  </article></div></div>
+  <div class="row">
+    <div class="col-md-6">
+    <article class="slide">
+      <aside class="aside aside-1">
+      <div>La première réalisation est un clone d'AirBnB. Les particuliers peuvent louer le Super-Héros de leur choix.</div>
+        <a href="http://sup-air-oz.herokuapp.com"><img src="images/supairoz-ac08472f.png"></a>
+      </aside>
+    </article></div>
+    <div class="col-md-6">
+    <article class="slider">
+      <aside class="aside aside-2">
+      <div>La deuxième réalisation, plus professionelle, est une appli mobile. Les particuliers peuvent réserver l'artisan de leur choix, valider un devis, et effectuer les travaux à domicile.</div>
+        <a href="http://me-makers.herokuapp.com"><img src="images/me-makers-79a47345.png"></a>
+      </aside>
+    </article></div>
+  </div>
+</div>
+
+<div class="wrapper hidden-md hidden-lg">
+  <div class="header">Mes Réalisations
+    <div class="row">
+      <div class="small-centered small-10 medium-8 large-6 columns">
+        <div class="container">
+          <div class="dot blue"><span><span></span></span></div>
+          <div class="dot green"><span><span></span></span></div>
+          <div class="dot red"><span><span></span></span></div>
+          <div class="dot orange"><span><span></span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-centered small-10 medium-8 large-6 columns">
+    <article class="container slide">
+      <aside class="aside aside-1">
+      <div>La première réalisation est un clone d'AirBnB. Les particuliers peuvent louer le Super-Héros de leur choix.</div>
+        <a href="http://sup-air-oz.herokuapp.com"><img src="images/supairoz-ac08472f.png" style="width: 300px; height:200px;"></a>
+      </aside>
+    </article></div>
+    <div class="col-md-6">
+    <article class="slider">
+      <aside class="aside aside-2">
+      <div>La deuxième réalisation, plus professionelle, est une appli mobile. Les particuliers peuvent réserver l'artisan de leur choix, valider un devis, et effectuer les travaux à domicile.</div>
+        <a href="http://me-makers.herokuapp.com"><img src="images/me-makers-79a47345.png"></a>
+      </aside>
+    </article></div>
+  </div>
 </div>
 
 <!-- <div id="home">
